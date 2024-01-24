@@ -1,4 +1,7 @@
-import 'package:apptest/container_widget.dart';
+import 'package:apptest/latihan_tiga.dart';
+import 'package:apptest/latihan_ui.dart';
+import 'package:apptest/listview/list_basic.dart';
+import 'package:apptest/listview/list_separated.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -38,8 +41,9 @@ class MyApp extends StatelessWidget {
           ),
           backgroundColor: Color.fromARGB(255, 0, 0, 0)
         ),
-        body: BelajarContainer(),
+        body: LatihanUi(),
       ),
+
     );
   }
 }
