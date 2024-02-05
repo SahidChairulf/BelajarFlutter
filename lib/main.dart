@@ -1,7 +1,16 @@
+import 'package:apptest/gridview/grid_builder.dart';
+import 'package:apptest/gridview/grid_count.dart';
+import 'package:apptest/gridview/grid_dasar.dart';
+import 'package:apptest/gridview/latihan_grid.dart';
 import 'package:apptest/latihan_tiga.dart';
 import 'package:apptest/latihan_ui.dart';
 import 'package:apptest/listview/list_basic.dart';
 import 'package:apptest/listview/list_separated.dart';
+import 'package:apptest/screens/detail_screen.dart';
+import 'package:apptest/screens/home_screen.dart';
+import 'package:apptest/screens/list_screen.dart';
+import 'package:apptest/screens/menu_screen.dart';
+import 'package:apptest/screens/second_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,13 +18,20 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'AppTest',
+      initialRoute: '/',
+      routes: {
+      // '/': (context) => const NavigationMenu(),
+      // '/second': (context) => const SecondScreen(),
+      // '/third': (context) => const ThirdScreen(),
+      '/list' : (context) => ListGalaxyScreen(),
+      },
       home: Scaffold(
         appBar: AppBar(
           centerTitle: false,
@@ -41,7 +57,7 @@ class MyApp extends StatelessWidget {
           ),
           backgroundColor: Color.fromARGB(255, 0, 0, 0)
         ),
-        body: LatihanUi(),
+        body:NavigationMenu(),        
       ),
 
     );

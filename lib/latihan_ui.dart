@@ -91,7 +91,7 @@ class LatihanUi extends StatelessWidget {
                                             Radius.circular(10)),
                                         image: DecorationImage(
                                             image: NetworkImage(
-                                                itemlist[index].url),
+                                            itemlist[index].url),
                                             fit: BoxFit.cover)),
                                   )
                                 ],
@@ -104,7 +104,7 @@ class LatihanUi extends StatelessWidget {
                                     padding: EdgeInsets.all(5),
                                     margin: EdgeInsets.all(5),
                                     child: Text(itemlist[index].text,
-                                        textAlign: TextAlign.justify),
+                                        textAlign: TextAlign.left),
                                   )
                                 ],
                               )
