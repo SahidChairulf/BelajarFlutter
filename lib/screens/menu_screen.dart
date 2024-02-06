@@ -1,4 +1,5 @@
 import 'package:apptest/screens/detail_screen.dart';
+import 'package:apptest/screens/form_galaxy.dart';
 import 'package:apptest/screens/home_screen.dart';
 import 'package:apptest/screens/input_form_screen.dart';
 import 'package:apptest/screens/list_screen.dart';
@@ -18,6 +19,7 @@ class __NavigationMenuState extends State<NavigationMenu> {
     HomeScreen(),
     ListGalaxyScreen(),
     BelajarForm(),
+    FormGalaxy()
   ];
   _changeTab(int index) {
     setState(() {
@@ -38,6 +40,7 @@ class __NavigationMenuState extends State<NavigationMenu> {
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: "List"),
           BottomNavigationBarItem(icon: Icon(Icons.account_box), label: "Acount"),
+          BottomNavigationBarItem(icon: Icon(Icons.airplane_ticket), label: "Go"),
         ],
       ),
       );
